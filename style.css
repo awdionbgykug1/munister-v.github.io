@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=EB+Garamond:400,500|Roboto:400,700");
+    @import url("https://fonts.googleapis.com/css?family=EB+Garamond:400,500|Roboto:400,700");
 html {
-    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=43423), auto;
+    cursor: url(/munistr/munister-v.github.io/image/standard.cur), auto;
 }
 
 .container {
