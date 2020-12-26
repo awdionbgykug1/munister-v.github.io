@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 
 
@@ -234,7 +232,7 @@
         }
         
         .perso ul li:nth-of-type(3) {
-            background: url(munister-v.github.io/image/espanol.jpg) no-repeat center center;
+            background: url(https://munister-v.github.io/image/espanol.jpg) no-repeat center center;
         }
         
         .perso ul li:nth-of-type(4) {
@@ -314,26 +312,22 @@
             top: 12%;
             left: 80%;
             background: rgba(0, 0, 0, 0.7);
-            height: 50px;
+            height: 62px;
             line-height: 50px;
             text-align: center;
-            width: 50px;
+            width: 64px;
             cursor: pointer;
             opacity: 0;
             animation: 0.6s fadeInLeft ease-out forwards 1.2s;
             -webkit-animation: 0.6s fadeInLeft ease-out forwards 1.2s;
+            font-size: xxx-large;
+            line-height: 61px;
+            border-radius: 10px;
+            margin-left: 0px;
         }
         
-        article span.close:after {
-            content: "Back to selection";
-            position: absolute;
-            width: 80px;
-            line-height: 10px;
-            color: #000;
-            bottom: -30px;
-            left: -15px;
-            text-transform: uppercase;
-            font-size: 10px;
+        article span.close:hover {
+            transform: scale(1.1);
         }
         
         svg {
@@ -404,18 +398,28 @@
         .fifth-link {
             bottom: -120px;
         }
+        
+        .next-slide {
+            position: absolute;
+            text-transform: uppercase;
+            cursor: pointer;
+            padding: 20px;
+            background: #000;
+            right: 0;
+            top: 50%;
+            margin-top: -50px;
+        }
+        
+        .slider {
+            display: none;
+        }
+        
+        .show {
+            display: block;
+        }
     </style>
 
     <script>
-        window.console = window.console || function(t) {};
-    </script>
-
-
-
-    <script>
-        if (document.location.search.match(/type=embed/gi)) {
-            window.parent.postMessage("resize", "*");
-        }
     </script>
 
 
@@ -457,58 +461,72 @@
 
     <!-- PAGE CONTENT, Order is important, nth-of-type is used -->
 
+    <!-- <ul class="test">
+      <li data-slider="slider_hit"><a href="#">Хит продаж</a></li>
+      <li data-slider="slider_new"><a href="#">Новинки</a></li>
+      <li data-slider="slider_sovet"><a href="#">Советуем</a></li>
+      <li data-slider="slider_sale">Акции</li>
+    </ul>
+    <div class="slider slider_hit">Слайдер хит</div>
+    <div class="slider slider_new">Слайдер новинки</div>
+    <div class="slider slider_sovet">Слайдер советуем</div>
+    <div class="slider slider_sale">Слайдер акции</div> -->
+
     <article class="john">
-        <span class="close">x</span>
+        <span class="close">❌</span>
         <div class="text-wrap">
             <h2>Хрестоматия</h2>
             <p> В учебно-теоретическом издании (хрестоматии) «Компьютерные сети. IoT и межмашинное взаимодействие» проведена работа по систематизации сведений, стандарты и подходы к технической реализации концепции Интернета вещей (Internet of Things, IoT),
                 технологий рабочих групп IEEE 802.11, 802.15 (IEEE 802.15.4). Рассмотрена новая (расширенная) систематизация локально-вычислительных сетей по территориальному признаку: описана концепция построения Body Area Network.
             </p>
             <div class="link-cont">
-                <a class="link" href="https://drive.google.com/file/d/1kJzvTYRoziVwE3QZDSo6Edx1FVXJGF8C/view?usp=sharing">Ознакомиться</a>
+                <a class="link" href="#">Ссылка в Сибирь</a>
             </div>
+        </div>
+        <div class="next-slide">
+            next page
         </div>
     </article>
     <article class="steve">
-        <span class="close">x</span>
+        <span class="close">❌</span>
         <div class="text-wrap">
             <h2>Практикум</h2>
             <p>Данное издание предназначено для получения практических навыков и умений посредством организации выполнения индивидуальных заданий в рамках проведения учебных практик как рекомендованного решения использования в контексте конкретных междисциплинарных
                 курсов, связанных с принципами организации межсетевого взаимодействия, архитектуры информационных систем, в частности, в рамках платформы «Internet of things»</p>
             <div class="link-cont second-link">
-                <a class="link" href="https://drive.google.com/file/d/1YsDpMN5xnWUaOZyz5sVGtv6brHznLfFz/view?usp=sharing">Ознакомиться</a>
+                <a class="link" href="#">Ссылка в Сибирь</a>
             </div>
         </div>
     </article>
     <article class="petra">
-        <span class="close">x</span>
+        <span class="close">❌</span>
         <div class="text-wrap">
             <h2>FBD в МПС</h2>
             <p>В учебно-практическом пособии «Визуальное программирование (FBD) для микропроцессорных систем и IoT» уделено большое внимание изучению и применению в прикладных задачах распространенных микропроцессорных систем (MCU/SoC) посредством их конфигурирования
                 (данных управляющих устройств) на графическом языке программирования FBD (Function Block Diagram) </p>
             <div class="link-cont third-link">
-                <a class="link" href="https://drive.google.com/file/d/1awDK1ccWO1cXLsxry-KDsXa4boP-7SdR/view?usp=sharing">Ознакомиться</a>
+                <a class="link" href="#">Ссылка в Сибирь</a>
             </div>
         </div>
     </article>
     <article class="jay">
-        <span class="close">x</span>
+        <span class="close">❌</span>
         <div class="text-wrap">
             <h2>Курс IoE</h2>
             <p>Интегрированный учебный курс «Интернет вещей. Межмашинное взаимодействие. Программирование в компьютерных системах и сетях.» для профессиональных модулей и дисциплин в рамках методологии преподавания профессионального цикла для направлений
                 подготовки укрупненной группы: 09.00.00 «Информатика и вычислительная техника»</p>
             <div class="link-cont fourth-link">
-                <a class="link" href="https://drive.google.com/file/d/1jPFMpozwjylJUTywDeeKGuU5mjCwJd9O/view?usp=sharing">Ознакомиться</a>
+                <a class="link" href="#">Ссылка в Сибирь</a>
             </div>
         </div>
     </article>
     <article class="bork">
-        <span class="close">x</span>
+        <span class="close">❌</span>
         <div class="text-wrap">
             <h2>Network-on-Chip</h2>
             <p>Акцентуации: архитектура и генезис NoC, SoC, архитектура ARM, реализация в SoC 5G/IEEE 802.11ax (Wi-Fi 6), 802.11be (Wi-Fi 7), обзор современных решений на рынке мобильных устройств и контроллеров. </p>
             <div class="link-cont fifth-link">
-                <a class="link" href="#">Пока недоступно</a>
+                <a class="link" href="#">Ссылка в Сибирь</a>
             </div>
         </div>
     </article>
@@ -522,8 +540,16 @@
       </filter>
   </defs>
 </svg>
-    <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
-
+    <!-- <script>
+        $('.test div').click(
+            function() {
+                var mySlider = $(this).data("slider");
+                $('.slider').not('.' + mySlider).removeClass('show');
+                $('.' + mySlider).addClass('show');
+                //$('.' + mySlider).toggleClass('show');
+            }
+        );
+    </script> -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
 
